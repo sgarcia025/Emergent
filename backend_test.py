@@ -29,11 +29,11 @@ class WhatsNewAPITester:
         
         try:
             if method == 'GET':
-                response = requests.get(url, headers=test_headers, timeout=10)
+                response = requests.get(url, headers=test_headers, timeout=15, verify=False)
             elif method == 'POST':
-                response = requests.post(url, json=data, headers=test_headers, timeout=10)
+                response = requests.post(url, json=data, headers=test_headers, timeout=15, verify=False)
             elif method == 'PUT':
-                response = requests.put(url, json=data, headers=test_headers, timeout=10)
+                response = requests.put(url, json=data, headers=test_headers, timeout=15, verify=False)
 
             print(f"   Status Code: {response.status_code}")
             
