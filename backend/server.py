@@ -11,7 +11,6 @@ from typing import List, Optional, Dict, Any
 import uuid
 from datetime import datetime, timezone, timedelta
 from enum import Enum
-import qrcode
 import base64
 from io import BytesIO
 import csv
